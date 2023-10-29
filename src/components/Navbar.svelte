@@ -32,7 +32,7 @@
 </script>
 
 <nav class="flex flex-row p-[2rem] items-center justify-between">
-  <h1 class="text-4xl font-medium">.yh</h1>
+  <h1 class="text-4xl font-medium text-black dark:text-[#d1d1d1]">.yh</h1>
   <!-- Navbar button -->
   {#if isMobileView && !menuOpen}
     <div class="md:hidden mt-[0.3rem]">
@@ -54,7 +54,7 @@
     </div>
   {/if}
   <div class="flex flex-row items-center gap-[2.5rem] hidden md:flex">
-    <div class="flex flex-row gap-[2.5rem] text-2xl font-semibold ml-[4rem]">
+    <div class="flex flex-row gap-[2.5rem] text-xl font-semibold ml-[4rem]">
       <h1 class="dark:text-[#d1d1d1] dark:hover:text-white">Work</h1>
       <h1 class="dark:text-[#d1d1d1] dark:hover:text-white">About</h1>
       <h1 class="dark:text-[#d1d1d1] dark:hover:text-white">Resume</h1>
@@ -95,28 +95,47 @@
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="/"
-                class="text-black dark:text-[#d1d1d1] hover:text-white mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-black dark:text-[#d1d1d1] hover:text-white mt-[3rem] px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
-                out:fly={{ y: 200, duration: 2000 }}>home</a
+                out:fly={{ y: 200, duration: 2000 }}>Work</a
               >
               <a
                 href="/projects"
-                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
-                out:fly={{ y: 200, duration: 1500 }}>projects</a
+                out:fly={{ y: 200, duration: 1500 }}>About</a
               >
               <a
                 href="/about"
-                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
-                out:fly={{ y: 200, duration: 1000 }}>about</a
+                out:fly={{ y: 200, duration: 1000 }}>Resume</a
               >
               <a
                 href="/contact"
-                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-black dark:text-[#d1d1d1] hover:text-white px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
-                out:fly={{ y: 200, duration: 500 }}>contact</a
+                out:fly={{ y: 200, duration: 500 }}>More</a
               >
+            </div>
+            <div class="flex flex-col items-center gap-[2rem]">
+              <div
+                class="w-[10rem] h-[2.5rem] bg-black dark:bg-[#d1d1d1] flex justify-center items-center rounded-xl"
+                in:fly={{ y: 200, duration: 1900 }}
+                out:fly={{ y: 200, duration: 300 }}
+              >
+                <h1
+                  class="text-[#d1d1d1] dark:text-black font-semibold text-xl"
+                >
+                  Get in touch
+                </h1>
+              </div>
+              <div
+                in:fly={{ y: 200, duration: 1900 }}
+                out:fly={{ y: 200, duration: 300 }}
+              >
+                <ThemeSwitch />
+              </div>
             </div>
             <div />
           </div>
