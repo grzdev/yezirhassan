@@ -3,24 +3,24 @@
 </script>
 
 <div class="flex flex-col jusitfy-center items-center p-[2rem]">
-  <div class="grid grid-cols-2 mt-[1.5rem] sm:mt-[2rem] md:mt-[3rem]">
+  <div class="grid grid-cols-2 mt-[1rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
       <h1
-        class="text-[1.7rem] sm:text-[2rem] md:text-[2.5rem] font-semibold col-start-1 text-black dark:text-[#d1d1d1]"
+        class="text-[1.2rem] sm:text-[2rem] md:text-[2.5rem] font-semibold col-start-1 text-black dark:text-[#d1d1d1]"
       >
         Yezir Hassan,
       </h1>
     </div>
     <div class="col-span-2 ...">
       <h1
-        class="text-[5rem] sm:text-[7rem] md:text-[9rem] font-bold text-black dark:text-[#d1d1d1] leading-[6rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[1rem] md:mt-[-1rem]"
+        class="text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-black dark:text-[#d1d1d1] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[1rem] md:mt-[-1rem]"
       >
         Sports Journalist
       </h1>
     </div>
     <div class="col-start-2 ...">
       <h1
-        class="text-lg sm:text-2xl md:text-3xl font-semibold text-black dark:text-[#d1d1d1] mt-[2rem] sm:mt-[2.5rem] md:mt-[1rem]"
+        class="text-md sm:text-2xl md:text-3xl font-semibold text-black dark:text-[#d1d1d1] mt-[2rem] sm:mt-[2.5rem] md:mt-[1rem]"
       >
         and Web Developer.
       </h1>
