@@ -1,47 +1,154 @@
 <script>
   import Icon from "@iconify/svelte";
+  import { fade } from "svelte/transition";
+  import { onMount } from "svelte";
+
+  const options = [
+    "Sports Journalist.",
+    "Creative Manager.",
+    "Backend developer.",
+  ];
+  let currentIndex = 0;
+
+  function changeOption() {
+    // header text change
+    const optionsElement = document.getElementById("options");
+    if (optionsElement) {
+      optionsElement.classList.add("fade-out");
+
+      setTimeout(() => {
+        optionsElement.textContent = options[currentIndex];
+        optionsElement.classList.remove("fade-out");
+      }, 500);
+
+      currentIndex++;
+      if (currentIndex >= options.length) {
+        currentIndex = 0;
+      }
+    }
+  }
+
+  onMount(() => {
+    // Trigger the changeOption function every 5 seconds
+    setInterval(changeOption, 4000);
+  });
+
+  let fadeIn = false;
+  onMount(() => {
+    setTimeout(() => {
+      fadeIn = true;
+    }, 200);
+  });
 </script>
 
 <div class="flex flex-col jusitfy-center items-center p-[2rem]">
-  <div class="grid grid-cols-2 mt-[1rem] sm:mt-[2rem] md:mt-[3rem]">
+  <!-- name/occupation -->
+  <div class=" mt-[2rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
-      <h1
-        class="text-[1.2rem] sm:text-[2rem] md:text-[2.5rem] font-semibold col-start-1 text-black dark:text-[#d1d1d1]"
+      <h2
+        class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[0rem] sm:mt-[3rem] md:mt-[1rem]"
       >
-        Yezir Hassan,
-      </h1>
-    </div>
-    <div class="col-span-2 ...">
-      <h1
-        class="text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-black dark:text-[#d1d1d1] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[1rem] md:mt-[-1rem]"
-      >
-        Sports Journalist
-      </h1>
-    </div>
-    <div class="col-start-2 ...">
-      <h1
-        class="text-md sm:text-2xl md:text-3xl font-semibold text-black dark:text-[#d1d1d1] mt-[2rem] sm:mt-[2.5rem] md:mt-[1rem]"
-      >
-        and Web Developer.
-      </h1>
+        <span id="options" class="">Sports Journalist.</span>
+      </h2>
     </div>
   </div>
+
+  <!-- Explore button -->
   <div
-    class="flex flex-row items-center justify-center mt-[5rem] sm:mt-[7rem] md:mt-[7rem]"
+    class="flex flex-row items-center justify-center mt-[4rem] sm:mt-[6rem] md:mt-[4.5rem]"
   >
     <button
-      class="text-black dark:text-[#d1d1d1] hover:text-black dark:hover:text-white flex flex-row items-center text-[1.5rem] sm:text-[1.5rem] md:text-[2rem]"
+      class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-16 w-56 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold"
     >
-      Explore
-      <Icon
-        icon="ic:sharp-arrow-outward"
-        class="ml-[0.4rem] text-[1.5rem] sm:text-[1.8rem] md:text-[2.4rem]"
+      <div
+        class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#053315] dark:bg-[#80FFAC] delay-150 group-hover:delay-75"
       />
+      <div
+        class="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#146631] dark:bg-[#52CC7C] delay-150 group-hover:delay-100"
+      />
+      <div
+        class="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#2E9953] dark:bg-[#2E9953] delay-150 group-hover:delay-150"
+      />
+      <div
+        class="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#52CC7C] dark:bg-[#146631] delay-150 group-hover:delay-200"
+      />
+      <div
+        class="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#80FFAC] dark:bg-[#053315] delay-150 group-hover:delay-300"
+      />
+      <p class="z-10 text-black dark:text-white font-semibolc text-lg">
+        Explore
+      </p>
     </button>
   </div>
+
+  <!-- Avatar -->
+  {#if fadeIn}
+    <div class="move-container">
+      <h4 class="move-from-buttom">
+        <Icon
+          icon="emojione-monotone:newspaper"
+          class="text-white text-4xl sm:text-5xl md:text-6xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
+        />
+      </h4>
+      <h4 class="move-from-buttom">
+        <Icon
+          icon="fontisto:python"
+          class="text-white text-3xl sm:text-4xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-19rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
+        />
+      </h4>
+      <h4 class="move-from-buttom">
+        <Icon
+          icon="fa6-solid:photo-film"
+          class="text-white text-3xl sm:text-4xl md:text-4xl text-[#1b8b42] dark:text-[#52CC7C] absolute absolute mt-[0] ml-[-11rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
+        />
+      </h4>
+      <h4 class="move-from-buttom">
+        <Icon
+          icon="icons8:idea"
+          class="text-white text-4xl sm:text-5xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[0] ml-[9rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
+        />
+      </h4>
+    </div>
+  {/if}
 </div>
 
 <style>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+      opacity: 1; /* End with opacity 1 (fully visible) */
+    }
+  }
+  .move-container {
+    animation: move 3s ease-in-out infinite;
+  }
+
+  @keyframes move {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .move-from-buttom {
+    animation: moveFromBottomRight4 1s ease-in-out;
+  }
+
+  @keyframes moveFromBottomRight4 {
+    0% {
+      transform: translate(30%, 60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
   button {
     font-family: inherit;
     font-weight: 700;
@@ -78,4 +185,52 @@
     transition-duration: 400ms;
     transition-property: width, left;
   }
+
+  /* Name/Occupation */
+  @keyframes moveFromBottomRight {
+    0% {
+      transform: translate(10%, 60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveFromBottomRight2 {
+    0% {
+      transform: translate(10%, 30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveFromBottomRight3 {
+    0% {
+      transform: translate(30%, 60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    animation: moveFromBottomRight 1s ease-in-out;
+  }
+
+  h2 {
+    animation: moveFromBottomRight2 1s ease-in-out;
+  }
+
+  button {
+    animation: moveFromBottomRight3 1s ease-in-out;
+  }
+
+  /* Icons */
 </style>
