@@ -35,7 +35,9 @@
   // logo switch
 </script>
 
-<nav class="flex flex-row p-[2rem] items-center justify-between">
+<nav
+  class="flex flex-row p-[1rem] sm:p-[2rem] md:p-[2rem] items-center justify-between"
+>
   <h1
     class="text-4xl font-medium text-black dark:text-[#989898] mt-[0] sm:mt-[0] md:mt-[-0.3rem] logo"
   >

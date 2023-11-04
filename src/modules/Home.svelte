@@ -43,7 +43,7 @@
 
 <div class="flex flex-col jusitfy-center items-center p-[2rem]">
   <!-- name/occupation -->
-  <div class=" mt-[2rem] sm:mt-[2rem] md:mt-[3rem]">
+  <div class=" mt-[4rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
       <h2
         class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[0rem] sm:mt-[3rem] md:mt-[1rem]"
@@ -58,7 +58,7 @@
     class="flex flex-row items-center justify-center mt-[4rem] sm:mt-[6rem] md:mt-[4.5rem]"
   >
     <button
-      class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-16 w-56 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold"
+      class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-12 sm:h-16 md:h-16 w-40 sm:w-56 md:w-56 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold"
     >
       <div
         class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#053315] dark:bg-[#80FFAC] delay-150 group-hover:delay-75"
@@ -87,25 +87,25 @@
       <h4 class="move-from-buttom">
         <Icon
           icon="emojione-monotone:newspaper"
-          class="text-white text-4xl sm:text-5xl md:text-6xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
+          class=" text-4xl sm:text-5xl md:text-6xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="fontisto:python"
-          class="text-white text-3xl sm:text-4xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-19rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
+          class=" text-3xl sm:text-4xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-19rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="fa6-solid:photo-film"
-          class="text-white text-3xl sm:text-4xl md:text-4xl text-[#1b8b42] dark:text-[#52CC7C] absolute absolute mt-[0] ml-[-11rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
+          class=" text-3xl sm:text-4xl md:text-4xl text-[#1b8b42] dark:text-[#52CC7C] absolute absolute mt-[2rem] ml-[-11rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="icons8:idea"
-          class="text-white text-4xl sm:text-5xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[0] ml-[9rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
+          class=" text-4xl sm:text-5xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[2rem] ml-[9rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
         />
       </h4>
     </div>
