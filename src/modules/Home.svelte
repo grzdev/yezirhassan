@@ -43,10 +43,10 @@
 
 <div class="flex flex-col jusitfy-center items-center p-[2rem]">
   <!-- name/occupation -->
-  <div class=" mt-[8rem] sm:mt-[2rem] md:mt-[3rem]">
+  <div class=" mt-[7rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
       <h2
-        class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[0rem] sm:mt-[3rem] md:mt-[1rem]"
+        class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[3rem] md:mt-[1rem]"
       >
         <span id="options" class="">Sports Journalist.</span>
       </h2>
@@ -58,7 +58,7 @@
     class="flex flex-row items-center justify-center mt-[3rem] sm:mt-[6rem] md:mt-[4.5rem]"
   >
     <a href="/work">
-      <button
+      <!-- <button
         class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-12 sm:h-16 md:h-16 w-40 sm:w-56 md:w-56 rounded-xl bg-sky-800 p-2 flex justify-center items-center font-extrabold"
       >
         <div
@@ -79,6 +79,11 @@
         <p class="z-10 text-black dark:text-white font-semibolc text-lg">
           Explore
         </p>
+      </button> -->
+      <button
+        class=" duration-500 group cursor-pointer flex justify-center items-center font-extrabold"
+      >
+        <span> Explore</span>
       </button>
     </a>
   </div>
@@ -89,25 +94,25 @@
       <h4 class="move-from-buttom">
         <Icon
           icon="emojione-monotone:newspaper"
-          class=" text-4xl sm:text-5xl md:text-6xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
+          class=" text-4xl sm:text-5xl md:text-6xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[-21rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="fa6-solid:photo-film"
-          class=" text-2xl sm:text-4xl md:text-4xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[-19rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
+          class=" text-2xl sm:text-4xl md:text-4xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="fontisto:python"
-          class=" text-3xl sm:text-4xl md:text-5xl text-[#1b8b42] dark:text-[#52CC7C] absolute absolute mt-[4.3rem] ml-[-10rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
+          class=" text-3xl sm:text-4xl md:text-5xl text-[#2E9953] dark:text-[#52CC7C] absolute absolute mt-[4.3rem] ml-[-10rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
         />
       </h4>
       <h4 class="move-from-buttom">
         <Icon
           icon="el:idea"
-          class=" text-4xl sm:text-5xl md:text-6xl text-[#1b8b42] dark:text-[#52CC7C] absolute mt-[4rem] ml-[8rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
+          class=" text-4xl sm:text-5xl md:text-6xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[4rem] ml-[8rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
         />
       </h4>
     </div>
@@ -151,7 +156,7 @@
       opacity: 1;
     }
   }
-  button {
+  /* button {
     font-family: inherit;
     font-weight: 700;
     cursor: pointer;
@@ -164,9 +169,9 @@
   }
 
   button:focus,
-  /* button:hover {
+  button:hover {
     color: rgb(170, 170, 170);
-  } */
+  }
 
   button:focus:after,
   button:hover:after {
@@ -186,6 +191,48 @@
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
+  } */
+  button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 5.2em;
+    background-color: #5c5c5c;
+    border: 0.08em solid #fff;
+    border-radius: 1rem 0 1rem 0;
+    font-size: 12px;
+  }
+
+  button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 3em;
+    background: rgb(5, 51, 21);
+    background: linear-gradient(
+      304deg,
+      rgba(5, 51, 21, 1) 0%,
+      rgba(98, 199, 133, 1) 100%
+    );
+
+    border-radius: 0.8rem 0 0.8rem 0;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #d3d1d1;
+  }
+
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #d3d1d1;
+  }
+
+  button span:not(hover) {
+    transition: all 1s;
   }
 
   /* Name/Occupation */
@@ -222,9 +269,9 @@
     }
   }
 
-  h1 {
+  /* h1 {
     animation: moveFromBottomRight 1s ease-in-out;
-  }
+  } */
 
   h2 {
     animation: moveFromBottomRight2 1s ease-in-out;
