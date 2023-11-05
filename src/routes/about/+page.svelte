@@ -1,7 +1,11 @@
 <script>
+  import Page from "$lib/Page.svelte";
+  import Navbar from "../../components/Navbar.svelte";
   import About from "../../modules/About.svelte";
+  let menuOpen = false;
 </script>
 
-<div>
+<Page>
+  <Navbar {menuOpen} on:toggleMenu={() => (menuOpen = !menuOpen)} />
   <About />
-</div>
+</Page>
