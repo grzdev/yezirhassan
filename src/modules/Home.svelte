@@ -43,7 +43,7 @@
 
 <div class="flex flex-col jusitfy-center items-center p-[2rem]">
   <!-- name/occupation -->
-  <div class=" mt-[7rem] sm:mt-[2rem] md:mt-[3rem]">
+  <div class=" mt-[5.5rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
       <h2
         class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[3rem] md:mt-[1rem]"
@@ -58,28 +58,6 @@
     class="flex flex-row items-center justify-center mt-[3rem] sm:mt-[6rem] md:mt-[4.5rem]"
   >
     <a href="/work">
-      <!-- <button
-        class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-12 sm:h-16 md:h-16 w-40 sm:w-56 md:w-56 rounded-xl bg-sky-800 p-2 flex justify-center items-center font-extrabold"
-      >
-        <div
-          class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#053315] dark:bg-[#80FFAC] delay-150 group-hover:delay-75"
-        />
-        <div
-          class="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#146631] dark:bg-[#52CC7C] delay-150 group-hover:delay-100"
-        />
-        <div
-          class="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#2E9953] dark:bg-[#2E9953] delay-150 group-hover:delay-150"
-        />
-        <div
-          class="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#52CC7C] dark:bg-[#146631] delay-150 group-hover:delay-200"
-        />
-        <div
-          class="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#80FFAC] dark:bg-[#053315] delay-150 group-hover:delay-300"
-        />
-        <p class="z-10 text-black dark:text-white font-semibolc text-lg">
-          Explore
-        </p>
-      </button> -->
       <button
         class=" duration-500 group cursor-pointer flex justify-center items-center font-extrabold"
       >

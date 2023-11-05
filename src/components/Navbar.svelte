@@ -38,16 +38,14 @@
 <nav
   class="flex flex-row p-[1rem] sm:p-[2rem] md:p-[2rem] items-center justify-between"
 >
-  <h1
-    class="text-4xl font-medium text-black dark:text-[#989898] mt-[0] sm:mt-[0] md:mt-[-0.3rem] logo"
-  >
+  <div>
     <img
       id="logoDark"
       src={LogoDark}
       alt=""
-      class="w-[6rem] sm:w-[8rem] md:w-[9rem]"
+      class="w-[6rem] sm:w-[8rem] md:w-[9rem] brightness-120 dark:brightness-130"
     />
-  </h1>
+  </div>
   <!-- Navbar button -->
   {#if isMobileView && !menuOpen}
     <div class="md:hidden mt-[0.3rem]">
@@ -102,7 +100,7 @@
     <div class="flex flex-row items-center gap-[2rem]">
       <a href="/contact">
         <div
-          class="page5 w-[10rem] h-[3rem] bg-[#146631] dark:bg-[#2E9953] flex justify-center items-center rounded-xl"
+          class="page5 w-[10rem] h-[3rem] bg-[#35a35b] dark:bg-[#2E9953] hover:bg-[#24673b] dark:hover:bg-[#3bc26a] transition duration-500 ease-in-out flex justify-center items-center rounded-xl"
         >
           <h1 class="text-[white] dark:text-white font-semibold text-xl">
             Get in touch
@@ -138,25 +136,25 @@
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="/"
-                class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>Work</a
               >
               <a
                 href="/work"
-                class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>About</a
               >
               <a
                 href="/about"
-                class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>Resume</a
               >
               <a
                 href="/more"
-                class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
                 out:fly={{ y: 200, duration: 500 }}>More</a
               >
@@ -169,7 +167,7 @@
                   out:fly={{ y: 200, duration: 300 }}
                 >
                   <h1
-                    class="text-[white] dark:text-white font-semibold text-xl"
+                    class=" text-[white] dark:text-white font-semibold text-xl"
                   >
                     Get in touch
                   </h1>
@@ -233,8 +231,7 @@
     animation: slideFromTop 1s ease-in-out;
     transform: translateY(100);
   }
-  /* .darkmode {
-    animation: slideFromTop 1.1s ease-in-out;
-    transform: translateY(100);
-  } */
+  .text-bounce {
+    transition: transform 0.2s ease-in-out;
+  }
 </style>
