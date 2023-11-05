@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Page from "$lib/Page.svelte";
   import ThemeSwitch from "$lib/ThemeSwitch/ThemeSwitch.svelte";
 
   import "../app.css";

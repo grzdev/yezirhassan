@@ -33,19 +33,29 @@
   }
 
   // logo switch
+
+  let currentPath = "";
+
+  onMount(() => {
+    currentPath = window.location.pathname;
+  });
 </script>
 
 <nav
   class="flex flex-row p-[1rem] sm:p-[2rem] md:p-[2rem] items-center justify-between"
 >
-  <div>
-    <img
-      id="logoDark"
-      src={LogoDark}
-      alt=""
-      class="w-[6rem] sm:w-[8rem] md:w-[9rem] brightness-120 dark:brightness-130"
-    />
-  </div>
+  <h1
+    class="text-4xl font-medium text-black dark:text-[#989898] mt-[0] sm:mt-[0] md:mt-[-0.3rem] logo"
+  >
+    <a href="/">
+      <img
+        id="logoDark"
+        src={LogoDark}
+        alt=""
+        class="w-[6rem] sm:w-[8rem] md:w-[9rem] brightness-120 dark:brightness-175"
+      />
+    </a>
+  </h1>
   <!-- Navbar button -->
   {#if isMobileView && !menuOpen}
     <div class="md:hidden mt-[0.3rem]">
@@ -70,14 +80,14 @@
     class="flex flex-row items-center gap-[2.5rem] hidden md:flex mt-[-2rem]"
   >
     <div class="flex flex-row gap-[2.5rem] text-xl font-semibold ml-[4rem]">
-      <a href="work">
+      <a href="/work" class:active={currentPath === "/work"}>
         <h1
           class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page1"
         >
           Work
         </h1>
       </a>
-      <a href="about">
+      <a href="/about" class:active={currentPath === "/about"}>
         <h1
           class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page2"
         >
@@ -89,7 +99,7 @@
       >
         Resume
       </h1>
-      <a href="more">
+      <a href="/more" class:active={currentPath === "/more"}>
         <h1
           class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page4"
         >
@@ -231,7 +241,7 @@
     animation: slideFromTop 1s ease-in-out;
     transform: translateY(100);
   }
-  .text-bounce {
-    transition: transform 0.2s ease-in-out;
+  a.active {
+    border-bottom: 3px solid #3bc26a;
   }
 </style>
