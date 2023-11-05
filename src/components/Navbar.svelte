@@ -54,7 +54,7 @@
       <button on:click={toggleMenu}>
         <Icon
           icon="line-md:close-to-menu-alt-transition"
-          class="text-black dark:text-[#989898] cursor-pointer text-3xl sm:text-3xl"
+          class="text-[#6a6868] dark:text-[#989898] cursor-pointer text-3xl sm:text-3xl"
         />
       </button>
     </div>
@@ -63,7 +63,7 @@
       <button on:click={toggleMenu}>
         <Icon
           icon="line-md:menu-to-close-alt-transition"
-          class="text-black dark:text-[#989898] cursor-pointer text-3xl sm:text-3xl"
+          class="text-[#6a6868] dark:text-[#989898] cursor-pointer text-3xl sm:text-3xl"
         />
       </button>
     </div>
@@ -72,35 +72,43 @@
     class="flex flex-row items-center gap-[2.5rem] hidden md:flex mt-[-2rem]"
   >
     <div class="flex flex-row gap-[2.5rem] text-xl font-semibold ml-[4rem]">
-      <h1
-        class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page1"
-      >
-        Work
-      </h1>
-      <h1
-        class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page2"
-      >
-        About
-      </h1>
+      <a href="work">
+        <h1
+          class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page1"
+        >
+          Work
+        </h1>
+      </a>
+      <a href="about">
+        <h1
+          class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page2"
+        >
+          About
+        </h1>
+      </a>
       <h1
         class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page3"
       >
         Resume
       </h1>
-      <h1
-        class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page4"
-      >
-        More
-      </h1>
+      <a href="more">
+        <h1
+          class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out page4"
+        >
+          More
+        </h1>
+      </a>
     </div>
     <div class="flex flex-row items-center gap-[2rem]">
-      <div
-        class="page5 w-[10rem] h-[2.5rem] bg-[#146631] dark:bg-[#2E9953] flex justify-center items-center rounded-xl"
-      >
-        <h1 class="text-[white] dark:text-white font-semibold text-xl">
-          Get in touch
-        </h1>
-      </div>
+      <a href="/contact">
+        <div
+          class="page5 w-[10rem] h-[3rem] bg-[#146631] dark:bg-[#2E9953] flex justify-center items-center rounded-xl"
+        >
+          <h1 class="text-[white] dark:text-white font-semibold text-xl">
+            Get in touch
+          </h1>
+        </div>
+      </a>
       <div class="darkmode mr-[3rem]">
         <ThemeSwitch />
       </div>
@@ -135,7 +143,7 @@
                 out:fly={{ y: 200, duration: 2000 }}>Work</a
               >
               <a
-                href="/projects"
+                href="/work"
                 class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>About</a
@@ -147,22 +155,26 @@
                 out:fly={{ y: 200, duration: 1000 }}>Resume</a
               >
               <a
-                href="/contact"
+                href="/more"
                 class="text-black dark:text-[#989898] dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
                 out:fly={{ y: 200, duration: 500 }}>More</a
               >
             </div>
             <div class="flex flex-col items-center gap-[2rem]">
-              <div
-                class="w-[10rem] h-[2.5rem] bg-[#146631] dark:hover:text-white flex justify-center items-center rounded-xl"
-                in:fly={{ y: 200, duration: 1900 }}
-                out:fly={{ y: 200, duration: 300 }}
-              >
-                <h1 class="text-[white] dark:text-white font-semibold text-xl">
-                  Get in touch
-                </h1>
-              </div>
+              <a href="/contact">
+                <div
+                  class="w-[10rem] h-[3rem] bg-[#146631] dark:hover:text-white flex justify-center items-center rounded-xl"
+                  in:fly={{ y: 200, duration: 1900 }}
+                  out:fly={{ y: 200, duration: 300 }}
+                >
+                  <h1
+                    class="text-[white] dark:text-white font-semibold text-xl"
+                  >
+                    Get in touch
+                  </h1>
+                </div>
+              </a>
               <div
                 in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}
