@@ -49,13 +49,13 @@
   >
     <a href="/">
       <img
-        id="logoDark"
         src={LogoDark}
         alt=""
-        class="w-[6rem] sm:w-[8rem] md:w-[9rem] brightness-120 dark:brightness-175"
+        class="w-[6rem] sm:w-[8rem] md:w-[9rem] hover:brightness-50 dark:hover:brightness-200 transition duration-500 ease-in-out"
       />
     </a>
   </h1>
+  <!-- id="logoDark" -->
   <!-- Navbar button -->
   {#if isMobileView && !menuOpen}
     <div class="md:hidden mt-[0.3rem]">
@@ -117,7 +117,7 @@
           </h1>
         </div>
       </a>
-      <div class="darkmode mr-[3rem]">
+      <div class="darkmode mr-[0] sm:mr-[0] md:mr-[2rem]">
         <ThemeSwitch />
       </div>
     </div>

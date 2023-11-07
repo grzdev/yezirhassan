@@ -41,12 +41,14 @@
   });
 </script>
 
-<div class="flex flex-col jusitfy-center items-center p-[2rem]">
+<div
+  class="flex flex-col jusitfy-center items-center p-[2rem] mt-[0] sm:mt-[3rem] md:mt-[0] lg:mt-[0]"
+>
   <!-- name/occupation -->
   <div class=" mt-[5.5rem] sm:mt-[2rem] md:mt-[3rem]">
     <div class="">
       <h2
-        class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[7rem] md:text-[9rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7rem] md:leading-[14rem] mt-[1rem] sm:mt-[3rem] md:mt-[1rem]"
+        class="hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[3.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[7rem] font-bold text-[#6a6868] dark:text-[#989898] leading-[4rem] sm:leading-[7 rem] md:leading-[14rem] mt-[1rem] sm:mt-[3rem] md:mt-[1rem]"
       >
         <span id="options" class="">Sports Journalist.</span>
       </h2>
@@ -55,7 +57,7 @@
 
   <!-- Explore button -->
   <div
-    class="flex flex-row items-center justify-center mt-[3rem] sm:mt-[6rem] md:mt-[4.5rem]"
+    class="flex flex-row items-center justify-center mt-[3rem] sm:mt-[3rem] md:mt-[4.5rem]"
   >
     <a href="/work">
       <button
@@ -69,30 +71,38 @@
   <!-- Avatar -->
   {#if fadeIn}
     <div class="move-container">
-      <h4 class="move-from-buttom">
-        <Icon
-          icon="emojione-monotone:newspaper"
-          class=" text-4xl sm:text-5xl md:text-6xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[-21rem] ml-[-8rem] sm:mt-[-30rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
-        />
-      </h4>
-      <h4 class="move-from-buttom">
-        <Icon
-          icon="fa6-solid:photo-film"
-          class=" text-2xl sm:text-4xl md:text-4xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[-20rem] ml-[7rem] sm:mt-[-28rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
-        />
-      </h4>
-      <h4 class="move-from-buttom">
-        <Icon
-          icon="fontisto:python"
-          class=" text-3xl sm:text-4xl md:text-5xl text-[#2E9953] dark:text-[#52CC7C] absolute absolute mt-[4.3rem] ml-[-10rem] sm:mt-[-1rem] md:mt-[0.6rem] sm:ml-[-19rem] md:ml-[-28rem]"
-        />
-      </h4>
-      <h4 class="move-from-buttom">
-        <Icon
-          icon="el:idea"
-          class=" text-4xl sm:text-5xl md:text-6xl text-[#2E9953] dark:text-[#52CC7C] absolute mt-[4rem] ml-[8rem] sm:mt-[-1rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
-        />
-      </h4>
+      <a href="/work">
+        <h4 class="move-from-buttom">
+          <Icon
+            icon="emojione-monotone:newspaper"
+            class=" text-4xl sm:text-5xl md:text-6xl text-[#2d9f55] hover:text-[#24673b] dark:text-[#2E9953] dark:hover:text-[#3ecd70] transition duration-500 ease-in-out absolute mt-[-21rem] ml-[-8rem] sm:mt-[-19rem] md:mt-[-28rem] sm:ml-[-14rem] md:ml-[-25rem]"
+          />
+        </h4>
+      </a>
+      <a href="/work">
+        <h4 class="move-from-buttom">
+          <Icon
+            icon="fa6-solid:photo-film"
+            class=" text-2xl sm:text-4xl md:text-4xl text-[#2d9f55] hover:text-[#24673b] dark:text-[#2E9953] dark:hover:text-[#3ecd70] transition duration-500 ease-in-out absolute mt-[-20rem] ml-[7rem] sm:mt-[-17rem] md:mt-[-26rem] sm:ml-[13rem] md:ml-[22rem]"
+          />
+        </h4>
+      </a>
+      <a href="/more">
+        <h4 class="move-from-buttom">
+          <Icon
+            icon="fontisto:python"
+            class=" text-3xl sm:text-4xl md:text-5xl text-[#2d9f55] hover:text-[#24673b] dark:text-[#2E9953] dark:hover:text-[#3ecd70] transition duration-500 ease-in-out absolute absolute mt-[4.3rem] ml-[-10rem] sm:mt-[8rem] md:mt-[0.6rem] sm:ml-[-17rem] md:ml-[-28rem]"
+          />
+        </h4>
+      </a>
+      <a href="/more">
+        <h4 class="move-from-buttom">
+          <Icon
+            icon="el:idea"
+            class=" text-4xl sm:text-5xl md:text-6xl text-[#2d9f55] hover:text-[#24673b] dark:text-[#2E9953] dark:hover:text-[#3ecd70] transition duration-500 ease-in-out absolute mt-[4rem] ml-[8rem] sm:mt-[8rem] md:mt-[0.1rem] sm:ml-[15rem] md:ml-[26rem]"
+          />
+        </h4>
+      </a>
     </div>
   {/if}
 </div>
