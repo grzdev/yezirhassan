@@ -145,19 +145,19 @@
           <div class="flex flex-col gap-[2rem] items-center justify-center">
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
-                href="/"
+                href="/work"
                 class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>Work</a
               >
               <a
-                href="/work"
+                href="/about"
                 class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>About</a
               >
               <a
-                href="/about"
+                href=""
                 class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>Resume</a

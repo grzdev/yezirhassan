@@ -1,20 +1,40 @@
-<script>
+<script lang="ts">
   import { fade } from "svelte/transition";
   import WorkCard from "../components/WorkCard.svelte";
+  import featuredWork from "../components/featuredWork.json";
+  import type { Work } from "../components/workInterface";
+  export let work: Work[] = featuredWork.work;
 </script>
 
-<div class="">
-  <h2
-    class="move-from-buttom hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2.8rem] sm:text-[4rem] md:text-[5rem] lg:text-[5rem] font-bold text-[#6a6868] dark:text-[#989898] mt-[1rem] sm:mt-[1rem] md:mt-[-3rem]"
-  >
-    Featured Work
-  </h2>
-  <div>
-    <WorkCard />
+<div class="flex justify-center items-center">
+  <div class="flex flex-col overflow-x-hidden px-[1rem]">
+    <h2
+      class="move-from-buttom hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[5rem] font-bold text-[#6a6868] dark:text-[#989898] mt-[1rem] sm:mt-[1rem] md:mt-[-2rem]"
+    >
+      Featured Work
+    </h2>
+    <div
+      class="flex flex-row gap-[2rem] sm:gap-[3rem] md:gap-[3rem] p-[1rem] overflow-x-auto custom-scrollbar mt-[-1rem] move-container"
+    >
+      <WorkCard {work} />
+    </div>
   </div>
 </div>
 
 <style>
+  .move-container {
+    animation: move 2.5s ease-in-out infinite;
+  }
+
+  @keyframes move {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+  }
   .move-from-buttom {
     animation: moveFromBottomRight4 1s ease-in-out;
   }
