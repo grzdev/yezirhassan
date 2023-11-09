@@ -9,7 +9,7 @@
 <div class="flex justify-center items-center">
   <div class="flex flex-col overflow-x-hidden px-[1rem]">
     <h2
-      class="move-from-buttom hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[5rem] font-bold text-[#6a6868] dark:text-[#989898] mt-[1rem] sm:mt-[1rem] md:mt-[-2rem]"
+      class="move-from-buttom hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[2rem] sm:text-[4rem] md:text-[5rem] lg:text-[5rem] font-bold text-[#6a6868] dark:text-[#989898] mt-[-0.2rem] sm:mt-[-0.7rem] md:mt-[-2rem]"
     >
       Featured Work
     </h2>
