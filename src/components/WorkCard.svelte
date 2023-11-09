@@ -8,7 +8,7 @@
   <div class="flip-container mt-[2rem] move-from-buttom">
     <div class="flip-card">
       <div
-        class="flip-front gap-[1.7rem] sm:gap-[2rem] md:gap-[2rem] justify-center items-center flex flex-col bg-green-800 bg-gradient-to-r from-green-600 via-green-700 to-green-800"
+        class="flip-front gap-[1.7rem] sm:gap-[2rem] md:gap-[2rem] justify-center items-center flex flex-col bg-green-700 dark:bg-green-700"
       >
         <div>
           <img
@@ -24,32 +24,38 @@
           {work.topic}
         </h1>
         <div
-          class="w-[6rem] sm:w-[7rem] md:w-[7rem] h-[2rem] sm:h-[2.5rem] md:h-[2.5rem] rounded-lg bg-[white] justify-center items-center flex"
+          class="w-[4.5rem] sm:w-[7rem] md:w-[7rem] h-[2rem] sm:h-[2.5rem] md:h-[2.5rem] rounded-lg bg-[white] justify-center items-center flex"
         >
-          <h1 class="text-[1rem] font-semibold text-black">
+          <h1
+            class="text-[0.7rem] sm:text-[1rem] md:text-[1rem] font-bold text-black"
+          >
             {work.category}
           </h1>
         </div>
       </div>
       <div
-        class="flip-back text-white justify-center items-center flex flex-col gap-[1rem] sm:gap-[2rem] md:gap-[2rem] bg-green-900"
+        class="flip-back text-white justify-center items-center flex flex-col gap-[1rem] sm:gap-[2rem] md:gap-[2rem] bg-[#294723]"
       >
         <div class="flex flex-row gap-[1rem]">
-          <h1 class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-medium">
+          <h1
+            class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-semibold"
+          >
             {work.minread} read
           </h1>
-          <h1 class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-medium">
+          <h1
+            class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-semibold"
+          >
             {work.datePosted}
           </h1>
         </div>
         <p
-          class="w-[13rem] sm:w-[18rem] md:w-[18rem] text-[1.1rem] font-medium"
+          class="w-[13rem] sm:w-[18rem] md:w-[18rem] text-[0.9rem] sm:text-[1.1rem] md:text-[1.1rem] font-semibold"
         >
           {work.desc}
         </p>
         <a href={work.link}>
           <h1
-            class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-medium underline decoration-solid"
+            class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-semibold underline decoration-solid"
           >
             Read full article →
           </h1>
@@ -130,7 +136,10 @@
   }
   .flip-front {
     border-radius: 1rem;
-    /* background-color: #1a2c50; */
+    background-image: url("../image/bg3.jpeg"); /* Move background image to flip-front */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .flip-back {
