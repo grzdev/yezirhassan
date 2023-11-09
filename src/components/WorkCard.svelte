@@ -67,12 +67,12 @@
 
 <style>
   .move-from-buttom {
-    animation: moveFromBottomRight4 0.5s ease-in-out;
+    animation: moveFromBottomRight4 1s ease-in-out;
   }
 
   @keyframes moveFromBottomRight4 {
     0% {
-      transform: translate(10%, 20%);
+      transform: translate(30%, 60%);
       opacity: 0;
     }
     100% {
