@@ -41,7 +41,7 @@
 
   @keyframes moveFromBottomRight4 {
     0% {
-      transform: translate(00%, 0%);
+      transform: translate(10%, 40%);
       opacity: 0;
     }
     100% {
