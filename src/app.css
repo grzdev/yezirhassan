@@ -6,3 +6,7 @@ body {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     @apply bg-[#dfdfdf] dark:bg-black text-black dark:text-white text-center;
 }
+
+/* .Rubik {
+    font-family: 'Rubik', sans-serif;
+  } */

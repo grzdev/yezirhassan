@@ -142,39 +142,39 @@
         out:fade={{ duration: 700 }}
       >
         <div class="block md:hidden">
-          <div class="flex flex-col gap-[1.5rem] items-center justify-center">
-            <div class="flex flex-col gap-[1.5rem] items-center justify-center">
+          <div class="flex flex-col gap-[2rem] items-center justify-center">
+            <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="/"
                 class:active={currentPath === "/"}
-                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] px-1 py-2 text-2xl sm:text-3xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out mt-[3rem] text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 500 }}
                 out:fly={{ y: 200, duration: 2500 }}>Home</a
               >
               <a
                 href="/work"
                 class:active={currentPath === "/work"}
-                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-1 py-2 text-2xl sm:text-3xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>Work</a
               >
               <a
                 href="/about"
                 class:active={currentPath === "/about"}
-                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-1 py-2 text-2xl sm:text-3xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>About</a
               >
               <a
                 href=""
-                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-1 py-2 text-2xl sm:text-3xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>Resume</a
               >
               <a
                 href="/more"
                 class:active={currentPath === "/more"}
-                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out px-1 py-2 text-2xl sm:text-3xl font-semibold"
+                class="text-[#6a6868] dark:text-[#989898] hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-2xl sm:text-3xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
                 out:fly={{ y: 200, duration: 500 }}>More</a
               >
