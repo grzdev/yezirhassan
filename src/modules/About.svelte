@@ -1,13 +1,14 @@
 <script>
+  import { fade } from "svelte/transition";
   import Yezir from "../image/yezir.png";
 </script>
 
 <div class="flex flex-col justify-center items-center">
   <div
-    class="flex flex-col sm:flex-col md:flex-row justify-center items-center mt-[2rem] sm:mt-[3rem] md:mt-[-2rem]"
+    class="flex flex-col sm:flex-col md:flex-row justify-center items-center mt-[2rem] sm:mt-[3rem] md:mt-[2rem]"
   >
     <div
-      class="w-[22rem] sm:w-[32rem] md:w-[32rem] mt-[1rem] sm:mt-[1rem] md:mt-[3rem]"
+      class="hidden md:block w-[22rem] sm:w-[32rem] md:w-[32rem] mt-[1rem] sm:mt-[1rem] md:mt-[3rem]"
     >
       <h1
         class="text-center sm:text-start md:text-start text-fade text-xl sm:text-2xl md:text-2xl hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898] font-semibold"
@@ -32,50 +33,52 @@
         </h1>
       </div>
     </div>
-    <img
-      src={Yezir}
-      alt=""
-      class="text-fade mt-[2rem] sm:mt-[3rem] md:mt-[] w-[20rem] sm:w-[26rem] md:w-[28rem]"
-    />
+    <div class="">
+      <img
+        src={Yezir}
+        alt=""
+        class="text-fade mt-[0] sm:mt-[0] md:mt-[] w-[20rem] sm:w-[26rem] md:w-[28rem]"
+      />
+      <h1
+        class="block md:hidden text-center mt-[1rem] text-fade text-2xl hover:text-black dark:hover:text-white transition duration-500 ease-in-out text-[#6a6868] dark:text-[#989898] font-semibold"
+      >
+        Hey there 👋🏽
+      </h1>
+    </div>
   </div>
 
   <div
-    class="w-full h-[115rem] sm:h-[65rem] md:h-[55rem] bg-[#bdbdbd] dark:bg-[#19191A] mt-[5rem] flex justify-center items-center flex-col gap-[3rem]"
+    class="w-full h-[45rem] sm:h-[35rem] md:h-[35rem] bg-[#bdbdbd] dark:bg-[#19191A] mt-[5rem] md:mt-[8rem] flex justify-center items-center flex-col gap-[3rem]"
   >
     <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-semibold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="hidden md:block text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Labore,Lorem ipsum
-      dolor sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor sit
-      amet, consectetur adipisicing elit. Labore,
+      Sports journalist with a Mass Communication degree, blending my passion
+      for sports with my proficiency in Python to craft compelling narratives
+      enriched with data and statistics. Transforming games into stories through
+      the lens of analytics.
     </p>
     <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-semibold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="block md:hidden text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Labore,Lorem ipsum
-      dolor sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit. Labore,
+      Sports journalist with a Mass Communication degree, blending my passion
+      for sports with my proficiency in Python to craft compelling narratives
+      enriched with data and statistics.
     </p>
     <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-semibold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="block md:hidden text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Labore,Lorem ipsum
-      dolor sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit. Labore,
+      Transforming games into stories through the lens of analytics.
     </p>
     <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-semibold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Labore,Lorem ipsum
-      dolor sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit. Labore,
+      Beyond the field, I indulge in video games, appreciate art, and enjoy a
+      lively kickabout in the park.
     </p>
   </div>
+
+  <div class="w-full h-[10rem]" />
 </div>
 
 <style>
