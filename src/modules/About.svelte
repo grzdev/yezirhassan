@@ -48,32 +48,32 @@
   </div>
 
   <div
-    class="w-full h-[45rem] sm:h-[35rem] md:h-[35rem] bg-[#bdbdbd] dark:bg-[#19191A] mt-[5rem] md:mt-[8rem] flex justify-center items-center flex-col gap-[3rem]"
+    class="w-full h-[92rem] sm:h-[35rem] md:h-[62rem] bg-[#bdbdbd] dark:bg-[#19191A] mt-[5rem] md:mt-[8rem] flex justify-center items-center flex-col gap-[3rem]"
   >
-    <p
-      class="hidden md:block text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+    <!-- <p
+      class=" text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
       Sports journalist with a Mass Communication degree, blending my passion
       for sports with my proficiency in Python to craft compelling narratives
       enriched with data and statistics. Transforming games into stories through
       the lens of analytics.
-    </p>
+    </p> -->
     <p
-      class="block md:hidden text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class=" text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-md sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
      As a sports journalist with a Mass Communication degree, my passion is to craft captivating stories. 
      What sets me apart is that I don't just watch the game; I transform it into a narrative. 
      By blending my love for sports with my proficiency in Python, I weave compelling tales enriched with data and statistics.
     </p>
     <p
-      class="block md:hidden text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class=" text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-md sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
       Imagine games that unfold not just on the field, but also through the lens of analytics, 
       turning every match into a unique story waiting to be told. With a keen eye for detail and a knack for storytelling, 
       I bring you closer to the heart of the action.
     </p>
     <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-md sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
       But life is not just about the scoreboard. 
       Beyond sports journalism, I immerse myself in the world of video games, exploring the realms of rhytms and beats. I
@@ -82,7 +82,7 @@
       After all, the best stories are the ones we create ourselves.
     </p>
      <p
-      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-xl sm:text-xl md:text-2xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
+      class="text-left w-[20rem] sm:w-[40rem] md:w-[50rem] text-md sm:text-xl md:text-xl font-bold leading-[2.5rem] sm:leading-[2.5rem] md:leading-[2.7rem] text-[#2b2b2b] dark:text-[#eceaea]"
     >
       Join me on this journey of sports, technology, and creativity converge. Let's turn every game into a story worth sharing.
     </p>

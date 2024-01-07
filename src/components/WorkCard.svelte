@@ -1,5 +1,5 @@
 <script lang="ts">
-  import WorkImg from "../image/workImg.jpeg";
+  // import WorkImg from "../image/workImg.jpeg";
   import type { Work } from "../components/workInterface";
   export let work: Work[] = [];
 </script>
@@ -12,7 +12,7 @@
       >
         <div>
           <img
-            src={WorkImg}
+            src={work.img}
             alt=""
             class="w-[13rem] sm:w-[17rem] md:w-[17rem] rounded-lg"
           />
@@ -53,7 +53,7 @@
         >
           {work.desc}
         </p>
-        <a href={work.link}>
+        <a href={work.link} target="_blank">
           <h1
             class="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] font-semibold underline decoration-solid"
           >
