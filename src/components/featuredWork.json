@@ -32,13 +32,13 @@
         },
         {
             "id": 4,
-            "img": "/image/workImg.jpeg",
-            "topic": "Basketstball courts in Nigeria",
-            "category": "Basketball",
-            "minread": "7 mins",
-            "datePosted": "Nov 5",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,",
-            "link": "https://damioyeniyi.netlify.app/projects"
+            "img": "https://photos.google.com/share/AF1QipPaEEUa_PkVATwuVR0u0zuFZ2jiM0UOzTrAdD74LiSOudDw_ufu6BGeIUZHM-0SHQ/photo/AF1QipOsYQ3CpYFjYv53px2UPV7pbefCSMe__OHiM9j6?key=Z016aENQcjB6b0s5MmVxZHhhWHljRzE5ZklaZ29n",
+            "topic": "The Playoffs Picture",
+            "category": "NFL",
+            "minread": "6 mins",
+            "datePosted": "Jan 8",
+            "desc": "The NFL playoff picture is set, and teams are starting to chart their path to the Super Bowl. The San Francisco 49ers and the Baltimore Ravens earned a bye by securing the top spot in their respective conferences, leaving 12 other teams to battle it out for a chance to progress in the NFL playoffs.",
+            "link": "https://paper.wf/zir/the-nfl-playoff-picture-is-set-and-teams-are-starting-to-chart-their-path-to"
         }
     ]
 }
